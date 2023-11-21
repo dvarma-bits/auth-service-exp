@@ -1,18 +1,19 @@
 {
-  "name": "experience-layer",
+  "name": "auth-service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npm run auth",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "auth": "node auth-service.js"
+    "auth": "cross-env NODE_TLS_REJECT_UNAUTHORIZED='0' node auth-service.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrency": "^0.1.4",
     "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
     "express": "^4.18.2"
   }
 }
